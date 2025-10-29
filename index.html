@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💱 Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter">
+    <h1>💱 Currency Converter</h1>
+
+    <!-- Amount -->
+    <div class="amount">
+      <input type="number" value="1" min="1" />
+    </div>
+
+    <!-- Currency selectors -->
+    <div class="selectors">
+      <div class="select-box from">
+        <input type="text" class="search-input" placeholder="From (e.g. USD or United States)">
+        <ul class="dropdown"></ul>
+      </div>
+
+      <button id="swap" class="swap-btn">🔁</button>
+
+      <div class="select-box to">
+        <input type="text" class="search-input" placeholder="To (e.g. INR or India)">
+        <ul class="dropdown"></ul>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button id="convert">Convert</button>
+    <button id="favBtn">⭐ Add to Favorites</button>
+
+    <!-- Result -->
+    <p class="result"></p>
+
+    <!-- Favorites -->
+    <div class="favorites">
+      <h3>⭐ Favorites</h3>
+      <ul id="favList"></ul>
+    </div>
+  </div>
+
+  <script src="country-list.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
